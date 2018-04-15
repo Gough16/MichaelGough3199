@@ -24,7 +24,9 @@ public class UserInput {
 		name = scanner.nextLine();	
 		
 		//Then our argument is to our call is below, putting the name in a sentence 
-		System.out.println("Hello, "+name.toLowerCase()+" How old are you? ");
+		StringBuilder nm = new StringBuilder(name);
+		nm.reverse(); 
+		System.out.println("Hello, "+name.toUpperCase()+" How old are you " +nm+"?");
 	}
 
 	//Our method getAge is declared below with scanner and int age as the parameters
